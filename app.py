@@ -103,3 +103,6 @@ app = falcon.App(middleware=[MultipartMiddleware()])
 request_handler = ReuqestHandler()
 
 app.add_route('/', request_handler)
+
+def create_app():
+    return app
